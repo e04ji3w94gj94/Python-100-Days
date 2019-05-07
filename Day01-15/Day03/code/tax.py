@@ -1,6 +1,5 @@
 """
-输入月收入和五险一金计算个人所得税
-说明：写这段代码时新的个人所得税计算方式还没有颁布
+輸入月收入和五險一金計算個人所得稅
 
 Version: 0.1
 Author: 骆昊
@@ -8,7 +7,7 @@ Date: 2018-02-28
 """
 
 salary = float(input('本月收入: '))
-insurance = float(input('五险一金: '))
+insurance = float(input('五險一金: '))
 diff = salary - insurance - 3500
 if diff <= 0:
     rate = 0
@@ -35,5 +34,5 @@ else:
     rate = 0.45
     deduction = 13505
 tax = abs(diff * rate - deduction)
-print('个人所得税: ￥%.2f元' % tax)
-print('实际到手收入: ￥%.2f元' % (diff + 3500 - tax))
+print('個人所得稅: ￥%.2f元' % tax)
+print('實際到手收入: ￥%.2f元' % (diff + 3500 - tax))

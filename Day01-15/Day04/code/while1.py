@@ -1,5 +1,5 @@
 """
-用while循环实现1~100求和
+用while循環實現1~100求和
 
 Version: 0.1
 Author: 骆昊

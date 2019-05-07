@@ -1,5 +1,6 @@
 """
-用户身份验证
+用戶身份驗證
+
 
 Version: 0.1
 Author: 骆昊
@@ -10,11 +11,11 @@ Date: 2018-02-28
 # from getpass import getpass
 # from getpass import *
 
-username = input('请输入用户名: ')
-password = input('请输入口令: ')
-# 输入口令的时候终端中没有回显
-# password = getpass.getpass('请输入口令: ')
-if username == 'admin' and password == '123456':
-    print('身份验证成功!')
-else:
-    print('身份验证失败!')
+username =  input ( '請輸入用戶名: ')
+password =  input ( '請輸入密碼: ' )
+# 輸入密碼的時候終端中沒有回顯
+#password = getpass.getpass('請輸入密碼: ')
+if username ==  'admin'  and password ==  '123456' :
+     print ( '身份驗證成功! ' )
+else :
+     print ( '身份驗證失敗! ' )

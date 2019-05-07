@@ -1,9 +1,9 @@
 """
-函数的参数
-- 位置参数
-- 可变参数
-- 关键字参数
-- 命名关键字参数
+函數的參數
+- 位置參數
+- 可變參數
+- 關鍵字參數
+- 命名關鍵字參數
 
 Version: 0.1
 Author: 骆昊
@@ -11,7 +11,7 @@ Date: 2018-03-05
 """
 
 
-# 参数默认值
+# 參數默認值
 def f1(a, b=5, c=10):
     return a + b * 2 + c * 3
 
@@ -22,7 +22,7 @@ print(f1(100))
 print(f1(c=2, b=3, a=1))
 
 
-# 可变参数
+# 可變參數
 def f2(*args):
     sum = 0
     for num in args:
@@ -35,14 +35,14 @@ print(f2(1, 2, 3, 4, 5))
 print(f2())
 
 
-# 关键字参数
+# 關鍵字參數
 def f3(**kw):
     if 'name' in kw:
-        print('欢迎你%s!' % kw['name'])
+        print('歡迎你%s!' % kw['name'])
     elif 'tel' in kw:
-        print('你的联系电话是: %s!' % kw['tel'])
+        print('你的聯繫電話是: %s!' % kw['tel'])
     else:
-        print('没找到你的个人信息!')
+        print('沒找到你的個人信息!')
 
 
 param = {'name': '骆昊', 'age': 38}
