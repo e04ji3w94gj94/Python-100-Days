@@ -13,7 +13,7 @@ Date: 2018-03-06
 def main():
     fruits = ['grape', '@pple', 'strawberry', 'waxberry']
     print(fruits)
-    # 通过下标访问元素
+    # 通過下標訪問元素
     print(fruits[0])
     print(fruits[1])
     print(fruits[-1])

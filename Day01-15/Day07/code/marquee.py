@@ -1,23 +1,19 @@
-"""
-输入学生考试成绩计算平均分
-
-Version: 0.1
-Author: 骆昊
-Date: 2018-03-06
-"""
-
+'''
+在螢幕上顯示跑馬燈文字
+'''
 import os
 import time
 
 
 def main():
-    str = 'Welcome to 1000 Phone Chengdu Campus      '
+    content = '北京歡迎你為你開天闢地…………'
     while True:
-        print(str)
+        # 清理螢幕上的输出
+        os.system('cls')  # os.system('clear')
+        print(content)
+        # 休眠200毫秒
         time.sleep(0.2)
-        str = str[1:] + str[0:1]
-        # for Windows use os.system('cls') instead
-        os.system('clear')
+        content = content[1:] + content[0]
 
 
 if __name__ == '__main__':

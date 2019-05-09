@@ -21,7 +21,18 @@ def main():
     print('Max:', max_value)
     print('Min:', min_value)
 
+# 想一想如果最大的元素有兩個要找出第二大的又該怎么做 
+def max2(x):
+    m1, m2 = (x[0], x[1]) if x[0] > x[1] else (x[1], x[0])
+    for index in range(2, len(x)):
+        if x[index] > m1:
+            m2 = m1
+            m1 = x[index]
+        elif x[index] > m2:
+            m2 = x[index]
+    return m1, m2
 
 if __name__ == '__main__':
     main()
-# 想一想如果最大的元素有两个要找出第二大的又该怎么做 
+    print(max2(['grape', 'apple', 'strawberry', 'waxberry', 'pitaya']))
+
