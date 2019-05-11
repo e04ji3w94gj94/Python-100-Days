@@ -1,5 +1,5 @@
 """
-生成器 - 使用yield关键字
+生成器 - 使用yield關鍵字
 
 Version: 0.1
 Author: 骆昊

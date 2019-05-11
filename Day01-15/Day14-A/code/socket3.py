@@ -1,5 +1,5 @@
 """
-套接字 - 基于UDP协议Echo服务器
+套接字 - 基於UDP協議Echo服務器
 
 Version: 0.1
 Author: 骆昊

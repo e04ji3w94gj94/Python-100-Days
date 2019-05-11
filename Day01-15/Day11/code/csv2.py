@@ -1,5 +1,5 @@
 """
-写入CSV文件
+寫入CSV文件
 
 Version: 0.1
 Author: 骆昊
@@ -31,14 +31,14 @@ class Teacher(object):
 
 
 filename = 'teacher.csv'
-teachers = [Teacher('骆昊', 38, '叫兽'), Teacher('狄仁杰', 25, '砖家')]
+teachers = [Teacher('骆昊', 38, '教授'), Teacher('狄仁杰', 25, '專家')]
 
 try:
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         writer = csv.writer(f)
         for teacher in teachers:
             writer.writerow([teacher.name, teacher.age, teacher.title])
 except BaseException as e:
-    print('无法写入文件:', filename)
+    print('無法寫入文件:', filename)
 else:
-    print('保存数据完成!')
+    print('保存數據完成!')
